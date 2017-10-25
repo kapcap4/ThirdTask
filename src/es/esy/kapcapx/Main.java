@@ -22,6 +22,9 @@ public class Main {
         displaySwith(string);
         string = attemptDoWhile(18, 15);
         displaySwith(string);
+
+        // 4 Sub-task
+        displayNumber(20);
     }
     // Метод сравнения
     public static void comparison (int a, int b) {
@@ -140,5 +143,21 @@ public class Main {
             default:
                 System.out.println("Цель не достигнута, попытки исчерпаны");
         };
+    }
+    // 4 Sub-task
+    public static void displayNumber (int number) {
+        System.out.println("");
+        System.out.println("*******"+ "4 Sub-task" + "*******");
+        int tmp = 0;
+        for (int i = number; i < (Math.pow(number, 2)); i++) {
+            if ((i % 3) == 2) {
+                System.out.println("[" + i + "]");
+                tmp++;
+                if (tmp == 4) {
+                    break;
+                }
+                continue;
+            }
+        }
     }
 }
